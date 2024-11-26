@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вернигор РИ-321056</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo-wrapper">
+                <img class="logo animate__animated animate__flip" src="img/logo.png" alt="logo">
+            </div>            
+            <div class="wrapper-inner">
+                <div class="offer">
+                    <h1 class="offer__title">С помощью нас<br>
+                        вы сможете создать то, о чем</h1>
+                    <span class="offer__span">желаете!</span>
+                    <p class="offer__text">Наши возможности и опыт позволят Вам достичь<br>
+                        огромного успеха. Мы верим в Вас! И знаем это на<br>
+                        все 100%. Вас не остановить!
+                    </p>
+                    <a href="#" class="btn">Узнать больше...</a>
+                </div>
+                <img class="img-phone" src="img/header-img.png" alt="picture-phone">
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="container">
+            <div class="second-wripper-inner">
+                <div class="question">
+                    <h2>Что Вам необходимо?</h2>
+                </div>
+                <div class="big-block">
+                    <div class="mini-block">
+                        <img class="img-second-block" src="img/f3.png" alt="img-pencil">
+                        <h3>Первый блок</h3>
+                        <p class="p-second-mini-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="mini-block">
+                        <img class="img-second-block" src="img/f4.png" alt="img-balloon">
+                        <h3>Второй блок</h3>
+                        <p class="p-second-mini-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="mini-block">
+                        <img class="img-second-block" src="img/f5.png" alt="img-flag">
+                        <h3>Третий блок</h3>
+                        <p class="p-second-mini-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-block">
+        <div class="container">
+            <form class="call" method="post">
+                <h2>Форма обратного звонка</h2><br>
+                <input type="text" name="name" placeholder="Имя" required pattern="[А-Яа-яЁёA-Za-z\s]+"
+                    title="Введите только буквы"><br>
+                <input type="email" name="email" placeholder="Введите свой E-mail" required><br>
+                <input type="tel" name="phone" placeholder="Телефон" required pattern="\+?\d{10,15}"
+                    title="Введите номер телефона в формате: +1234567890"><br>
+                <input type="text" name="topic" placeholder="Какие темы вас интересуют?" required><br>
+                <button type="submit">Отправить вопрос!</button>
+            </form>
+
+            <form class="order" method="post">
+                <h2>Форма заказа продукта или услуги</h2>
+                <div class="error-messages" style="margin-bottom: 15px;"></div>
+                <input type="text" name="product_name" placeholder="Название продукта/услуги" required pattern="[А-Яа-яЁёA-Za-z\s]+" title="Название может содержать только буквы и пробелы"><br>
+                <input type="number" name="quantity" placeholder="Количество"><br>
+                <input type="date" name="delivery_date" placeholder="Дата доставки"><br>
+                <select name="delivery_method">
+                    <option value="" disabled selected>Выберите способ доставки</option>
+                    <option value="courier">Курьерская доставка</option>
+                    <option value="pickup">Самовывоз</option>
+                    <option value="post">Почтовая доставка</option>
+                </select><br>
+                <textarea name="comments" placeholder="Дополнительные комментарии" rows="4"></textarea><br>
+                <button type="submit">Оформить заказ</button>
+            </form>
+            
+            <!-- Контейнер для отображения результата -->
+            <div class="order-result" style="margin-top: 20px; padding: 20px; border: 1px solid #ccc; background-color: #f9f9f9;"></div>
+            
+            <script src="js/validation.js"></script>
+
+            <br>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p class="animate__animated animate__backInUp">© Все на этом сайте защищено</p>
+        </div>
+    </footer>
+</body>
+
+</html>
